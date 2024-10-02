@@ -12,25 +12,25 @@
 <body>
     <!-- header -->
     <header class="h-screen w-screen grid grid-cols-2">
-        <section class="flex justify-center items-center">
+        <section class="md:flex col-span-2 md:col-span-1 justify-center items-center p-10">
             <div id="hello-container" class="space-y-5">
-                <p class="text-5xl font-bold text-hello">
+                <p class="text-3xl md:text-5xl font-bold text-hello">
                     ¡Hola!, ¿que tal?
                 </p>
-                <p class="text-5xl font-bold text-hello">
+                <p class="text-3xl md:text-5xl font-bold text-hello">
                     Soy Emilio Vargas Millán
                 </p>
-                <p class="text-5xl font-bold text-hello">
+                <p class="text-3xl md:text-5xl font-bold text-hello">
                     y, como puede apreciarse, Full Stack developer
                     <br>
                     <span class="text-2xl mt-0 pt-0">(o lo que es lo mismo, que toco todos los palos 😂)</span>
                 </p>
-                <p class="text-5xl font-bold text-hello">
+                <p class="text-3xl md:text-5xl font-bold text-hello">
                     ¡Bienvenidos y bienvenidas a mi portafolio!
                 </p>
             </div>
         </section>
-        <section class="relative">
+        <section class="col-span-2 md:col-span-1 relative">
             <img class="absolute bottom-0 right-0" src="{{ asset('img/profile_picture.png') }}" alt="">
         </section>
     </header>
