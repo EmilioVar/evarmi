@@ -38,12 +38,12 @@
         </section>
     </header>
     <!-- info -->
-    <section id="info" class="p-10 space-y-5">
-        <div class="p-5 bg-gray-50 rounded-md shadow-md space-y-10 dark:bg-gray-900 dark:text-gray-400">
-            <h4 class="mb-3 text-3xl text-info font-bold"> Información básica</h4>
+    <section id="info" class="p-10 space-y-5 ">
+        <div class="p-5 bg-gray-50 rounded-md shadow-md space-y-10 dark:bg-gray-900 dark:text-gray-400 ">
+            <h4 class="mb-3 text-3xl text-info font-bold bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent dark:text-gray-300"> Información básica</h4>
             <p class="text-xl text-info"> Ví el mundo por primera vez un <strong>19 de Julio de 1995</strong>, por lo
-                que <span style="color: rgb(0, 170, 255);">según los mágicos cálculos de javascript tengo actualmente
-                    <span style="color: rgb(0, 170, 255)" class="age">29</span> años.</span> Nací en <span
+                que <span style="color: rgb(0, 170, 255);">según los mágicos cálculos del paquete Carbon para php <span class="text-sm">(en antiguo portafolio momentjs de js)</span> tengo actualmente
+                    <span style="color: rgb(0, 170, 255)" class="age">{{ Carbon\Carbon::parse('1995-07-19 00:00:00')->diff(Carbon\Carbon::now())->year }}</span> años.</span> Nací en <span
                     style="color: orange;">Valencia,</span> España, donde resido. </p>
             <p class="text-xl text-info"> Terminé el bachillerato en 2015, y durante mis años de estudiante me quedé
                 enamorado por
