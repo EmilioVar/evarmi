@@ -79,7 +79,7 @@
                     opacity: 1,
                     x: 0,
                     duration: 1,
-                    stagger: 1, // Tiempo entre animaciones
+                    stagger: .5, // Tiempo entre animaciones
                     onComplete: () => {
                         const duration = 2 * 1000,
                             animationEnd = Date.now() + duration,
