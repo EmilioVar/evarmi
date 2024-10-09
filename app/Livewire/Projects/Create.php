@@ -39,5 +39,9 @@ class Create extends Component
             'url' => $this->url,
             'image' => $icono
         ]);
+
+        session()->flash('alert', 'Project created successfully');
+        
+        $this->redirectRoute('projects.index');
     }
 }
