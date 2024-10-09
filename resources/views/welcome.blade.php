@@ -68,56 +68,60 @@
     <!-- skills -->
     <section id="technologies" class="p-10 space-y-5">
         <div class="p-5 bg-gray-50 rounded-md shadow-md space-y-10 dark:bg-gray-900 dark:text-gray-400 ">
-            <h4 class="text-3xl text-info font-bold bg-gradient-to-bl from-slate-900 via-slate-400 to-zinc-700 bg-clip-text text-transparent dark:text-gray-300">Habilidades</h4>
-            <div id="technologies-container" class="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 content-center">
+            <h4 class="text-3xl text-technologies font-bold bg-gradient-to-bl from-slate-900 via-slate-400 to-zinc-700 bg-clip-text text-transparent dark:text-gray-300">Habilidades y tecnologías</h4>
+            <div id="technologies-container" class="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 content-center text-gray-600 font-bold text-sm">
                 <div class="technology-icon text-center flex flex-col justify-center items-center scale-0">
-                    <img width="80px" class="my-3 mb-3" src="{{ asset('img/technologies/laravel.png') }}">
+                    <img class="size-14 my-3 mb-3" src="{{ asset('img/technologies/laravel.png') }}">
                     <p class="mb-0">Laravel</p>
                 </div>
                 <div class="technology-icon text-center flex flex-col justify-center items-center scale-0">
-                    <img width="80px" class="my-3 mb-3" src="{{ asset('img/technologies/html-5.png') }}">
+                    <img class="size-14 my-3 mb-3" src="{{ asset('img/technologies/html-5.png') }}">
                     <p class="mb-0">HTML5</p>
                 </div>
                 <div class="technology-icon text-center flex flex-col justify-center items-center scale-0">
-                    <img width="80px" class="my-3 mb-3" src="{{ asset('img/technologies/css-3.png') }}">
+                    <img class="size-14 my-3 mb-3" src="{{ asset('img/technologies/css-3.png') }}">
                     <p class="mb-0">CSS3</p>
                 </div>
                 <div class="technology-icon text-center flex flex-col justify-center items-center scale-0">
-                    <img width="80px" class="my-3 mb-3" src="{{ asset('img/technologies/js.png') }}">
+                    <img class="size-14 my-3 mb-3" src="{{ asset('img/technologies/js.png') }}">
                     <p class="mb-0">Javascript</p>
                 </div>
                 <div class="technology-icon text-center flex flex-col justify-center items-center scale-0">
-                    <img width="80px" class="my-3 mb-3" src="{{ asset('img/technologies/bootstrap.png') }}">
+                    <img class="size-14 my-3 mb-3" src="{{ asset('img/technologies/bootstrap.png') }}">
                     <p class="mb-0">Bootstrap</p>
                 </div>
                 <div class="technology-icon text-center flex flex-col justify-center items-center scale-0">
-                    <img width="80px" class="my-3 mb-3" src="{{ asset('img/technologies/tailwind.png') }}">
+                    <img class="h-14 w-auto my-3 mb-3" src="{{ asset('img/technologies/tailwind.png') }}">
                     <p class="mb-0">Tailwind</p>
                 </div>
                 <div class="technology-icon text-center flex flex-col justify-center items-center scale-0">
-                    <img width="80px" class="my-3 mb-3" src="{{ asset('img/technologies/php.png') }}">
+                    <img class="size-14 my-3 mb-3" src="{{ asset('img/technologies/php.png') }}">
                     <p class="mb-0">PHP</p>
                 </div>
                 <div class="technology-icon text-center flex flex-col justify-center items-center scale-0">
-                    <img width="80px" class="my-3 mb-3" src="{{ asset('img/technologies/bash.png') }}">
+                    <img class="size-14 my-3 mb-3" src="{{ asset('img/technologies/bash.png') }}">
                     <p class="mb-0">Bash</p>
+                </div>
+                <div class="technology-icon text-center flex flex-col justify-center items-center scale-0">
+                    <img class="size-14 my-3 mb-3" src="{{ asset('img/technologies/mysql.png') }}">
+                    <p class="mb-0">MySql</p>
+                </div>
+                <div class="technology-icon text-center flex flex-col justify-center items-center scale-0">
+                    <img class="size-14 my-3 mb-3" src="{{ asset('img/technologies/mongodb.svg') }}">
+                    <p class="mb-0">MongoDB</p>
+                </div>
+                <div class="technology-icon text-center flex flex-col justify-center items-center scale-0">
+                    <img class="size-14 my-3 mb-3" src="{{ asset('img/technologies/scrum.png') }}">
+                    <p class="mb-0">Agile</p>
+                </div>
+                <div class="technology-icon text-center flex flex-col justify-center items-center scale-0">
+                    <img class="size-14 my-3 mb-3" src="{{ asset('img/technologies/alpinejs.png') }}">
+                    <p class="mb-0">AlpineJS</p>
                 </div>
             </div>
         </div>
     </section>
     <script type="module">
-
-gsap.to(".technology-icon", {
-  duration: 1,
-  scale: 1,
-  y: 0,
-  ease: "power1.inOut",
-  stagger: {
-    grid: [2,4],
-    from: "edges",
-    amount: .5
-  }
-}); 
         function animateParagraphs() {
             gsap.fromTo('.text-hello', {
                     opacity: 0,
@@ -174,15 +178,13 @@ gsap.to(".technology-icon", {
                     }
                 });
         }
-
         animateParagraphs();
 
-        let options = {
+        let optionsInfo = {
             rootMargin: "0px",
             threshold: 0.25,
         };
-
-        var callback = function(entries, observer) {
+        var callbackInfo = function(entries, observer) {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     gsap.fromTo('.text-info', {
@@ -212,11 +214,49 @@ gsap.to(".technology-icon", {
             });
         };
 
+        let optionsTechnologies = {
+            rootMargin: "0px",
+            threshold: 0.25,
+        };
+        var callbackTechnologies = function(entries, observer) {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    gsap.fromTo('.text-technologies', {
+                            opacity: 0,
+                            y: 20
+                        }, // Estado inicial
+                        {
+                            opacity: 1,
+                            y: 0,
+                            duration: 1,
+                            stagger: .3, // Tiempo entre animaciones
+                        }
+                    );
 
-        let observer = new IntersectionObserver(callback, options);
+                    gsap.to(".technology-icon", {
+                        duration: 2,
+                        scale: 1,
+                        y: 0,
+                        ease: "power1.inOut",
+                        stagger: {
+                            grid: [2, 4],
+                            from: "center",
+                            amount: 1
+                        }
+                    });
+                }
+            });
+        };
 
-        var target = document.querySelector("#info");
-        observer.observe(target);
+        let infoObserver = new IntersectionObserver(callbackInfo, optionsInfo);
+        let technologiesObserver = new IntersectionObserver(callbackTechnologies, optionsTechnologies);
+
+        const info = document.querySelector("#info");
+        const technologies = document.querySelector("#technologies");
+
+        infoObserver.observe(info);
+        technologiesObserver.observe(technologies);
+
     </script>
 </body>
 
