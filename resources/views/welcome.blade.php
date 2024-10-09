@@ -80,7 +80,7 @@
                     <p class="mb-0">Bootstrap</p>
                 </div>
                 <div class="technology-icon text-center flex flex-col justify-center items-center scale-0">
-                    <img class="h-14 w-auto my-3 mb-3" src="{{ asset('img/technologies/tailwind.png') }}">
+                    <img class="h-14 w-auto my-3 mb-3" src="{{ asset('img/technologies/tailwind.svg') }}">
                     <p class="mb-0">Tailwind</p>
                 </div>
                 <div class="technology-icon text-center flex flex-col justify-center items-center scale-0">
@@ -110,7 +110,63 @@
             </div>
         </div>
     </section>
-    <x-slot:script>
+    <!-- cosas mías -->
+    <!-- aquí estaría super guay poner cosas interesantes de mi, como una especie de div con legos que se desmonten solos, mostrando una foto leyendo o realizando un trabajo de investigación -->
+    <section id="cosas-mias" class="p-10 space-y-5">
+        <div class="p-5 grid grid-cols-1 md:grid-cols-3 bg-gray-50 rounded-md shadow-md space-y-10 dark:bg-gray-900 dark:text-gray-400">
+            <article class="h-[400px] grid grid-cols-3 relative">
+                <div class="absolute top-0 right-0 w-full h-full flex justify-center items-center">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-semibold">
+                            Me gusta montar
+                        </h3>
+                        <h1 class="text-3xl font-bold">¡LEGOS!</h1>
+                    </div>
+                </div>
+                <div class="col-span-3 z-50 lego-block bg-green-500 three-points">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="col-span-2 z-40 lego-block bg-blue-500 two-points">
+                    <span></span><span></span>
+                </div>
+                <div class="col-span-1 z-30 lego-block bg-red-500 one-point">
+                    <span></span>
+                </div>
+                <div class="col-span-3 z-20 lego-block bg-green-500 three-points">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="col-span-1 z-10 lego-block bg-red-500 one-point">
+                    <span></span>
+                </div>
+                <div class="col-span-2 z-[9] lego-block bg-blue-500 two-points">
+                    <span></span><span></span>
+                </div>
+                <div class="col-span-2 z-[8] lego-block bg-blue-500 two-points">
+                    <span></span><span></span>
+                </div>
+                <div class="cols-span-1 z-[7] lego-block bg-red-500 one-point">
+                    <span></span>
+                </div>
+                <div class="col-span-3 z-[6] lego-block bg-green-500 three-points">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </article>
+            <article>
+                leer
+            </article>
+            <article>
+                construir
+            </article>
+        </div>
+    </section>
+    <!-- projects -->
+     <x-slot:script>
     <script type="module">
         function animateParagraphs() {
             gsap.fromTo('.text-hello', {
@@ -247,6 +303,14 @@
         infoObserver.observe(info);
         technologiesObserver.observe(technologies);
 
+    </script>
+    <script type="module">
+        gsap.to('.lego-block', {
+    y: -500,
+    opacity: 0,
+    stagger: .5 ,
+    ease: "expoScale(0.5,7,none)",
+});
     </script>
     </x-slot>
 </x-layout>
