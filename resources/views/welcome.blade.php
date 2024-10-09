@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Emilio Vargas Millán</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-
-<body class="dark:bg-black">
+<x-layout>
     <!-- header -->
     <header class="h-screen w-screen grid grid-cols-2 dark:text-gray-300 ">
         <section class="md:flex col-span-2 md:col-span-1 justify-center items-center p-10">
@@ -121,6 +110,7 @@
             </div>
         </div>
     </section>
+    <x-slot:script>
     <script type="module">
         function animateParagraphs() {
             gsap.fromTo('.text-hello', {
@@ -258,6 +248,5 @@
         technologiesObserver.observe(technologies);
 
     </script>
-</body>
-
-</html>
+    </x-slot>
+</x-layout>

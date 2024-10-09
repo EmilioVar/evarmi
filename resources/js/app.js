@@ -1,4 +1,5 @@
 import './bootstrap';
+import 'flowbite';
 
 import gsap from 'gsap';
 window.gsap = gsap;

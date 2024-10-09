@@ -15,6 +15,7 @@
     },
     "dependencies": {
         "@tsparticles/confetti": "^3.5.0",
+        "flowbite": "^2.5.2",
         "gsap": "^3.12.5",
         "js-confetti": "^0.12.0"
     }
