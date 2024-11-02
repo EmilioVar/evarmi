@@ -3,17 +3,17 @@
     <header class="h-screen w-screen grid grid-cols-2 dark:text-gray-300 ">
         <section class="md:flex col-span-2 md:col-span-1 justify-center items-center p-10">
             <div id="hello-container" class="space-y-5">
-                <p class="text-3xl lg:text-5xl font-bold text-hello">
+                <p class="text-3xl lg:text-5xl font-bold text-hello opacity-0">
                     ¡Hola!, ¿que tal?
                 </p>
-                <p class="text-3xl lg:text-5xl font-bold text-hello">
+                <p class="text-3xl lg:text-5xl font-bold text-hello opacity-0">
                     Soy Emilio Vargas Millán
                 </p>
-                <p class="text-3xl md:block lg:text-5xl font-bold text-hello">
+                <p class="text-3xl md:block lg:text-5xl font-bold text-hello opacity-0">
                     y, como puede apreciarse, Full Stack developer
                 </p>
                 <p
-                    class="text-3xl bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent md:block lg:text-5xl font-bold text-hello">
+                    class="text-3xl bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent md:block lg:text-5xl font-bold text-hello opacity-0">
                     ¡BIENVENID@!
                 </p>
             </div>
@@ -196,7 +196,7 @@
         </div>
     </section>
     <!-- projects -->
-    <x-slot:script>
+    <x-slot:script>g
         <script type="module">
             function animateParagraphs() {
                 gsap.fromTo('.text-hello', {
