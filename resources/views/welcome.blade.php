@@ -188,7 +188,7 @@
             </article>
             <!-- picar-codigo -->
             <article id="picar-codigo" class="relative flex justify-center rounded-md cosas-mias-item opacity-0 min-h-96">
-                <p class="text-white z-10 relative text-2xl mt-5">Y, por supuesto... ¡PICAR CÓDIGO!</p>
+                <p class="text-white z-10 relative text-2xl mt-5 p-5">Y, por supuesto... ¡PICAR CÓDIGO!</p>
                 <img src="{{ asset('img/programming.gif') }}"
                     class="absolute top-0 right-0 object-cover h-full w-full brightness-[50%] rounded-md"
                     alt="programming-gif">
