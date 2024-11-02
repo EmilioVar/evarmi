@@ -1,10 +1,14 @@
 {
+  "public/fonts/Jersey/Jersey10-Regular.ttf": {
+    "file": "assets/Jersey10-Regular-Dg7L8Xa3.ttf",
+    "src": "public/fonts/Jersey/Jersey10-Regular.ttf"
+  },
   "public/fonts/Playwrite/PlaywriteGBS-VariableFont_wght.ttf": {
     "file": "assets/PlaywriteGBS-VariableFont_wght-jt00bRSI.ttf",
     "src": "public/fonts/Playwrite/PlaywriteGBS-VariableFont_wght.ttf"
   },
   "resources/css/app.css": {
-    "file": "assets/app-Cgij_iYN.css",
+    "file": "assets/app-CtBjoEVx.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
