@@ -19,8 +19,8 @@
             </div>
         </section>
         <section class="col-span-2 md:col-span-1 relative">
-            <div class="absolute bottom-0 text-hello">
-                <img src="{{ asset('img/profile_picture.png') }}" alt="">
+            <div class="absolute bottom-0 text-hello opacity-0">
+                <img class="" src="{{ asset('img/profile_picture.png') }}" alt="">
             </div>
         </section>
     </header>
