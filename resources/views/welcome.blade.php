@@ -3,13 +3,13 @@
     <header class="h-screen w-screen grid grid-cols-2 dark:text-gray-300 ">
         <section class="md:flex col-span-2 md:col-span-1 justify-center items-center p-10">
             <div id="hello-container" class="space-y-5">
-                <p class="text-3xl lg:text-5xl font-bold text-hello opacity-0">
+                <p class="text-3xl lg:text-5xl font-bold text-hello opacity-0 jersey-font">
                     ¡Hola!, ¿que tal?
                 </p>
-                <p class="text-3xl lg:text-5xl font-bold text-hello opacity-0">
+                <p class="text-3xl lg:text-5xl font-bold text-hello opacity-0 jersey-font">
                     Soy Emilio Vargas Millán
                 </p>
-                <p class="text-3xl md:block lg:text-5xl font-bold text-hello opacity-0">
+                <p class="text-3xl md:block lg:text-5xl font-bold text-hello opacity-0 jersey-font">
                     y, como puede apreciarse, Full Stack developer
                 </p>
                 <p
@@ -188,15 +188,28 @@
             </article>
             <!-- picar-codigo -->
             <article id="picar-codigo" class="relative flex justify-center rounded-md cosas-mias-item opacity-0 min-h-96">
-                <p class="text-white z-10 relative text-2xl mt-5">¡PICAR CÓDIGO!</p>
+                <p class="text-white z-10 relative text-2xl mt-5">Y, por supuesto... ¡PICAR CÓDIGO!</p>
                 <img src="{{ asset('img/programming.gif') }}"
                     class="absolute top-0 right-0 object-cover h-full w-full brightness-[50%] rounded-md"
                     alt="programming-gif">
             </article>
         </div>
     </section>
+    <!-- despedida -->
+    <section class="dark:text-gray-400 p-10">
+        <div class="p-5 bg-gray-50 rounded-md shadow-md space-y-10 dark:bg-gray-900 dark:text-gray-400 ">
+            <div class="bg-white dark:bg-gray-900">
+                <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">¡Hablemos!</h2>
+                    <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Estoy muy agradecido por que hayas dedicado tu valioso tiempo en leer mi pequeña presenstación,<br> Para cualquier cualquier cosa, pegame un toque. ¡Animo! 🚀
+                    </p>
+                    <livewire:form-contact />
+                </div>
+              </div>
+        </div>
+    </section>
     <!-- projects -->
-    <x-slot:script>g
+    <x-slot:script>
         <script type="module">
             function animateParagraphs() {
                 gsap.fromTo('.text-hello', {
