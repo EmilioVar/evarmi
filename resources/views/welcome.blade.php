@@ -13,7 +13,7 @@
                     y, como puede apreciarse, Full Stack developer
                 </p>
                 <p
-                    class="text-3xl bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent md:block lg:text-5xl font-bold text-hello opacity-0">
+                    class="text-3xl jersey-font bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent md:block lg:text-5xl font-bold text-hello opacity-0">
                     ¡BIENVENID@!
                 </p>
             </div>
