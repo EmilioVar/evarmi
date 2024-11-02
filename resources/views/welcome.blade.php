@@ -122,6 +122,9 @@
     <section id="cosas-mias" class="p-10 space-y-5 ">
         <div
             class="p-5 grid grid-cols-1 md:grid-cols-3 bg-gray-50 rounded-md shadow-md space-y-10 dark:bg-gray-900 dark:text-gray-400">
+            <h4
+            class="text-3xl col-span-full cosas-mias-item opacity-0 font-bold bg-gradient-to-bl from-slate-900 via-slate-400 to-zinc-700 bg-clip-text text-transparent dark:text-gray-300">
+            Otras cosas, más o menos programáticas...</h4>
             <!-- lego -->
             <article class="h-[400px] grid grid-cols-3 relative">
                 <div class="absolute top-0 right-0 w-full h-full flex justify-center items-center">
@@ -314,7 +317,7 @@
                                 opacity: 1,
                                 y: 0,
                                 duration: 1,
-                                stagger: .3, // Tiempo entre animaciones
+                               /*  stagger: .3,  */// Tiempo entre animaciones
                             }
                         );
                     }
