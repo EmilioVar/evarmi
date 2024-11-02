@@ -317,7 +317,7 @@
                                 opacity: 1,
                                 y: 0,
                                 duration: 1,
-                               /*  stagger: .3,  */// Tiempo entre animaciones
+                                stagger: .3, // Tiempo entre animaciones
                             }
                         );
                     }
@@ -369,20 +369,17 @@
 
             let infoObserver = new IntersectionObserver(callbackInfo, options);
             let technologiesObserver = new IntersectionObserver(callbackTechnologies, options);
-            let cosasMiasObserver = new IntersectionObserver(callbacklego, options);
+            let legoObserver = new IntersectionObserver(callbacklego, options);
             let cosasMiasItemObserver = new IntersectionObserver(callbackCosasMias, options);
 
             const info = document.querySelector("#info");
             const technologies = document.querySelector("#technologies");
             const cosasMias = document.querySelector("#cosas-mias");
-            const cosasMiasItem = document.querySelectorAll(".cosas-mias-item");
 
             infoObserver.observe(info);
             technologiesObserver.observe(technologies);
-            cosasMiasObserver.observe(cosasMias);
-            cosasMiasItem.forEach(el => {
-                cosasMiasItemObserver.observe(el);
-            })
+            legoObserver.observe(cosasMias);
+            cosasMiasItemObserver.observe(cosasMias)
         </script>
 
     </x-slot>
