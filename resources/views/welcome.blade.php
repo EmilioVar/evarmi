@@ -12,7 +12,8 @@
                 <p class="text-3xl md:block lg:text-5xl font-bold text-hello">
                     y, como puede apreciarse, Full Stack developer
                 </p>
-                <p class="text-3xl bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent md:block lg:text-5xl font-bold text-hello">
+                <p
+                    class="text-3xl bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent md:block lg:text-5xl font-bold text-hello">
                     ¡BIENVENID@!
                 </p>
             </div>
@@ -26,11 +27,15 @@
     <!-- info -->
     <section id="info" class="p-10 space-y-5 ">
         <div class="p-5 bg-gray-50 rounded-md shadow-md space-y-10 dark:bg-gray-900 dark:text-gray-400 ">
-            <h4 class="mb-3 text-3xl text-info font-bold bg-gradient-to-bl from-slate-900 via-slate-400 to-zinc-700 bg-clip-text text-transparent dark:text-gray-300"> Información básica</h4>
+            <h4
+                class="mb-3 text-3xl text-info font-bold bg-gradient-to-bl from-slate-900 via-slate-400 to-zinc-700 bg-clip-text text-transparent dark:text-gray-300">
+                Información básica</h4>
             <p class="text-xl text-info"> Ví el mundo por primera vez un <strong>19 de Julio de 1995</strong>, por lo
-                que <span style="color: rgb(0, 170, 255);">según los mágicos cálculos del paquete Carbon para php <span class="text-sm">(en antiguo portafolio momentjs de js)</span> tengo actualmente
-                    <span style="color: rgb(0, 170, 255)" class="age">{{ Carbon\Carbon::parse('1995-07-19 00:00:00')->diff(Carbon\Carbon::now())->year }}</span> años.</span> Nací en <span
-                    style="color: orange;">Valencia,</span> España, donde resido. </p>
+                que <span style="color: rgb(0, 170, 255);">según los mágicos cálculos del paquete Carbon para php <span
+                        class="text-sm">(en antiguo portafolio momentjs de js)</span> tengo actualmente
+                    <span style="color: rgb(0, 170, 255)"
+                        class="age">{{ Carbon\Carbon::parse('1995-07-19 00:00:00')->diff(Carbon\Carbon::now())->year }}</span>
+                    años.</span> Nací en <span style="color: orange;">Valencia,</span> España, donde resido. </p>
             <p class="text-xl text-info"> Terminé el bachillerato en 2015, y durante mis años de estudiante me quedé
                 enamorado por
                 un tema
@@ -57,8 +62,11 @@
     <!-- skills -->
     <section id="technologies" class="p-10 space-y-5">
         <div class="p-5 bg-gray-50 rounded-md shadow-md space-y-10 dark:bg-gray-900 dark:text-gray-400 ">
-            <h4 class="text-3xl text-technologies font-bold bg-gradient-to-bl from-slate-900 via-slate-400 to-zinc-700 bg-clip-text text-transparent dark:text-gray-300">Habilidades y tecnologías</h4>
-            <div id="technologies-container" class="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 content-center text-gray-600 font-bold text-sm">
+            <h4
+                class="text-3xl text-technologies opacity-0 font-bold bg-gradient-to-bl from-slate-900 via-slate-400 to-zinc-700 bg-clip-text text-transparent dark:text-gray-300">
+                Habilidades y tecnologías</h4>
+            <div id="technologies-container"
+                class="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 content-center text-gray-600 font-bold text-sm">
                 <div class="technology-icon text-center flex flex-col justify-center items-center scale-0">
                     <img class="size-14 my-3 mb-3" src="{{ asset('img/technologies/laravel.png') }}">
                     <p class="mb-0">Laravel</p>
@@ -111,9 +119,10 @@
         </div>
     </section>
     <!-- cosas mías -->
-    <!-- aquí estaría super guay poner cosas interesantes de mi, como una especie de div con legos que se desmonten solos, mostrando una foto leyendo o realizando un trabajo de investigación -->
-    <section id="cosas-mias" class="p-10 space-y-5">
-        <div class="p-5 grid grid-cols-1 md:grid-cols-3 bg-gray-50 rounded-md shadow-md space-y-10 dark:bg-gray-900 dark:text-gray-400">
+    <section id="cosas-mias" class="p-10 space-y-5 ">
+        <div
+            class="p-5 grid grid-cols-1 md:grid-cols-3 bg-gray-50 rounded-md shadow-md space-y-10 dark:bg-gray-900 dark:text-gray-400">
+            <!-- lego -->
             <article class="h-[400px] grid grid-cols-3 relative">
                 <div class="absolute top-0 right-0 w-full h-full flex justify-center items-center">
                     <div class="text-center">
@@ -157,160 +166,208 @@
                     <span></span>
                 </div>
             </article>
-            <article>
-                leer
+            <!-- lectura -->
+            <article id="lectura" class="m-10 bg-white shadow-md rounded-r-xl border-l-8 border-red-500 relative cosas-mias-item opacity-0">
+                <div class="bookmark drop-shadow-xl "></div>
+                <div class="p-5 flex justify-center items-center flex-col">
+                    <h3 class="text-2xl font-semibold playwrite-font text-black">Leer </h3>
+                    <p
+                        class="first-line:uppercase first-line:tracking-widest
+  first-letter:text-7xl first-letter:font-bold first-letter:text-black
+  first-letter:mr-3 first-letter:float-left mt-5 playwrite-font text-black
+">
+                        Me gusta mucho leer (siempre que el tiempo me lo permite). Los libros que suelo leer son
+                        <i>distopías</i>, <i>apologética</i>, <i class="text-red-500">programación</i>, <i>novela
+                            histórica</i>, <i> aventuras...</i>
+                        <br>
+                        En fin, todo lo que me aporte algo y que me entretenga, tengo varias reseñas de libros en <a
+                            class="text-blue-500 font-bold" target="_blank"
+                            href="https://www.linkedin.com/in/emiliovargasmillan/">mi linkedin</a>
+                    </p>
+                </div>
             </article>
-            <article>
-                construir
+            <!-- picar-codigo -->
+            <article id="picar-codigo" class="relative flex justify-center rounded-md cosas-mias-item opacity-0 min-h-96">
+                <p class="text-white z-10 relative text-2xl mt-5">¡PICAR CÓDIGO!</p>
+                <img src="{{ asset('img/programming.gif') }}"
+                    class="absolute top-0 right-0 object-cover h-full w-full brightness-[50%] rounded-md"
+                    alt="programming-gif">
             </article>
         </div>
     </section>
     <!-- projects -->
-     <x-slot:script>
-    <script type="module">
-        function animateParagraphs() {
-            gsap.fromTo('.text-hello', {
-                    opacity: 0,
-                    x: -20
-                }, // Estado inicial
-                {
-                    opacity: 1,
-                    x: 0,
-                    duration: 1,
-                    stagger: 1, // Tiempo entre animaciones
-                    onComplete: () => {
-                        const duration = 2 * 1000,
-                            animationEnd = Date.now() + duration,
-                            defaults = {
-                                startVelocity: 30,
-                                spread: 360,
-                                ticks: 60,
-                                zIndex: 0
-                            };
+    <x-slot:script>
+        <script type="module">
+            function animateParagraphs() {
+                gsap.fromTo('.text-hello', {
+                        opacity: 0,
+                        x: -20
+                    }, // Estado inicial
+                    {
+                        opacity: 1,
+                        x: 0,
+                        duration: 1,
+                        stagger: 1, // Tiempo entre animaciones
+                        onComplete: () => {
+                            const duration = 2 * 1000,
+                                animationEnd = Date.now() + duration,
+                                defaults = {
+                                    startVelocity: 30,
+                                    spread: 360,
+                                    ticks: 60,
+                                    zIndex: 0
+                                };
 
-                        function randomInRange(min, max) {
-                            return Math.random() * (max - min) + min;
-                        }
-
-                        const interval = setInterval(function() {
-                            const timeLeft = animationEnd - Date.now();
-
-                            if (timeLeft <= 0) {
-                                return clearInterval(interval);
+                            function randomInRange(min, max) {
+                                return Math.random() * (max - min) + min;
                             }
 
-                            const particleCount = 50 * (timeLeft / duration);
+                            const interval = setInterval(function() {
+                                const timeLeft = animationEnd - Date.now();
 
-                            // since particles fall down, start a bit higher than random
-                            confetti(
-                                Object.assign({}, defaults, {
-                                    particleCount,
-                                    origin: {
-                                        x: randomInRange(0.1, 0.3),
-                                        y: Math.random() - 0.2
-                                    },
-                                })
-                            );
-                            confetti(
-                                Object.assign({}, defaults, {
-                                    particleCount,
-                                    origin: {
-                                        x: randomInRange(0.7, 0.9),
-                                        y: Math.random() - 0.2
-                                    },
-                                })
-                            );
-                        }, 250);
-                    }
-                });
-        }
-        animateParagraphs();
+                                if (timeLeft <= 0) {
+                                    return clearInterval(interval);
+                                }
 
-        let optionsInfo = {
-            rootMargin: "0px",
-            threshold: 0.25,
-        };
-        var callbackInfo = function(entries, observer) {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    gsap.fromTo('.text-info', {
-                            opacity: 0,
-                            y: 20
-                        }, // Estado inicial
-                        {
-                            opacity: 1,
-                            y: 0,
-                            duration: 1,
-                            stagger: .3, // Tiempo entre animaciones
-                        }
-                    );
-                } else {
-                    gsap.fromTo('.text-info', {
-                            opacity: 1,
-                            y: 0
-                        }, // Estado inicial
-                        {
-                            opacity: 0,
-                            y: 20,
-                            duration: 1,
-                            stagger: .3, // Tiempo entre animaciones
-                        }
-                    );
-                }
-            });
-        };
+                                const particleCount = 50 * (timeLeft / duration);
 
-        let optionsTechnologies = {
-            rootMargin: "0px",
-            threshold: 0.25,
-        };
-        var callbackTechnologies = function(entries, observer) {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    gsap.fromTo('.text-technologies', {
-                            opacity: 0,
-                            y: 20
-                        }, // Estado inicial
-                        {
-                            opacity: 1,
-                            y: 0,
-                            duration: 1,
-                            stagger: .3, // Tiempo entre animaciones
-                        }
-                    );
-
-                    gsap.to(".technology-icon", {
-                        duration: 2,
-                        scale: 1,
-                        y: 0,
-                        ease: "power1.inOut",
-                        stagger: {
-                            grid: [2, 4],
-                            from: "center",
-                            amount: 1
+                                // since particles fall down, start a bit higher than random
+                                confetti(
+                                    Object.assign({}, defaults, {
+                                        particleCount,
+                                        origin: {
+                                            x: randomInRange(0.1, 0.3),
+                                            y: Math.random() - 0.2
+                                        },
+                                    })
+                                );
+                                confetti(
+                                    Object.assign({}, defaults, {
+                                        particleCount,
+                                        origin: {
+                                            x: randomInRange(0.7, 0.9),
+                                            y: Math.random() - 0.2
+                                        },
+                                    })
+                                );
+                            }, 250);
                         }
                     });
-                }
-            });
-        };
+            }
+            animateParagraphs();
 
-        let infoObserver = new IntersectionObserver(callbackInfo, optionsInfo);
-        let technologiesObserver = new IntersectionObserver(callbackTechnologies, optionsTechnologies);
+            let options = {
+                rootMargin: "0px",
+                threshold: 0.25,
+            };
+            let callbackInfo = function(entries, observer) {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        gsap.fromTo('.text-info', {
+                                opacity: 0,
+                                y: 20
+                            }, // Estado inicial
+                            {
+                                opacity: 1,
+                                y: 0,
+                                duration: 1,
+                                stagger: .3, // Tiempo entre animaciones
+                            }
+                        );
+                    } else {
+                        gsap.fromTo('.text-info', {
+                                opacity: 1,
+                                y: 0
+                            }, // Estado inicial
+                            {
+                                opacity: 0,
+                                y: 20,
+                                duration: 1,
+                                stagger: .3, // Tiempo entre animaciones
+                            }
+                        );
+                    }
+                });
+            };
 
-        const info = document.querySelector("#info");
-        const technologies = document.querySelector("#technologies");
+            let callbackCosasMias = function(entries, observer) {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        gsap.fromTo('.cosas-mias-item', {
+                                opacity: 0,
+                                y: 20
+                            }, // Estado inicial
+                            {
+                                opacity: 1,
+                                y: 0,
+                                duration: 1,
+                                stagger: .3, // Tiempo entre animaciones
+                            }
+                        );
+                    }
+                });
+            };
 
-        infoObserver.observe(info);
-        technologiesObserver.observe(technologies);
+            let callbackTechnologies = function(entries, observer) {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        gsap.fromTo('.text-technologies', {
+                                opacity: 0,
+                                y: 20
+                            }, // Estado inicial
+                            {
+                                opacity: 1,
+                                y: 0,
+                                duration: 1,
+                                stagger: .3, // Tiempo entre animaciones
+                            }
+                        );
 
-    </script>
-    <script type="module">
-        gsap.to('.lego-block', {
-    y: -500,
-    opacity: 0,
-    stagger: .5 ,
-    ease: "expoScale(0.5,7,none)",
-});
-    </script>
+                        gsap.to(".technology-icon", {
+                            duration: 2,
+                            scale: 1,
+                            y: 0,
+                            ease: "power1.inOut",
+                            stagger: {
+                                grid: [2, 4],
+                                from: "center",
+                                amount: 1
+                            }
+                        });
+                    }
+                });
+            };
+
+            let callbacklego = function(entries, observer) {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        gsap.to('.lego-block', {
+                            y: -500,
+                            opacity: 0,
+                            stagger: .5,
+                            ease: "expoScale(0.5,7,none)",
+                        });
+                    }
+                });
+            };
+
+            let infoObserver = new IntersectionObserver(callbackInfo, options);
+            let technologiesObserver = new IntersectionObserver(callbackTechnologies, options);
+            let cosasMiasObserver = new IntersectionObserver(callbacklego, options);
+            let cosasMiasItemObserver = new IntersectionObserver(callbackCosasMias, options);
+
+            const info = document.querySelector("#info");
+            const technologies = document.querySelector("#technologies");
+            const cosasMias = document.querySelector("#cosas-mias");
+            const cosasMiasItem = document.querySelectorAll(".cosas-mias-item");
+
+            infoObserver.observe(info);
+            technologiesObserver.observe(technologies);
+            cosasMiasObserver.observe(cosasMias);
+            cosasMiasItem.forEach(el => {
+                cosasMiasItemObserver.observe(el);
+            })
+        </script>
+
     </x-slot>
 </x-layout>

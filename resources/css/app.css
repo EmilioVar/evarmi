@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Playwrite GB S';
+    src: url('/public/fonts/Playwrite/PlaywriteGBS-VariableFont_wght.ttf') format('truetype');
+}
+
+.playwrite-font {
+    font-family: 'Playwrite GB S';
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
 .three-points {
     position: relative;
     
@@ -66,4 +78,27 @@
         top: -10px;
         left: 50%; /* Posición central para el único punto */
     }
+}
+
+.lego-block{
+    span {
+        box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.3),
+    }
+    
+    box-shadow: inset -4px -4px 6px rgba(0, 0, 0, 0.3),
+              4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bookmark{ 
+    position: absolute;
+    top: 0;
+    right: 30px;
+    height: 70px; 
+    width: 50px; 
+    padding: 0px; 
+    -webkit-transform: rotate(0deg) skew(0deg); 
+    transform: rotate(0deg) skew(0deg); 
+    border-left: 25px solid red; 
+    border-right: 25px solid red; 
+    border-bottom: 25px solid transparent; 
 }
