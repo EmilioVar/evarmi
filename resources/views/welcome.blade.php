@@ -31,11 +31,10 @@
                 class="mb-3 text-3xl text-info font-bold bg-gradient-to-bl from-slate-900 via-slate-400 to-zinc-700 bg-clip-text text-transparent dark:text-gray-300">
                 Información básica</h4>
             <p class="text-xl text-info"> Ví el mundo por primera vez un <strong>19 de Julio de 1995</strong>, por lo
-                que <span style="color: rgb(0, 170, 255);">según los mágicos cálculos del paquete Carbon para php <span
-                        class="text-sm">(en antiguo portafolio momentjs de js)</span> tengo actualmente
+                que <span style="color: rgb(0, 170, 255);">según los mágicos cálculos del paquete Carbon para php tengo actualmente
                     <span style="color: rgb(0, 170, 255)"
                         class="age">{{ Carbon\Carbon::parse('1995-07-19 00:00:00')->diff(Carbon\Carbon::now())->year }}</span>
-                    años.</span> Nací en <span style="color: orange;">Valencia,</span> España, donde resido. </p>
+                    años</span>. Nací en <span style="color: orange;">Valencia,</span> España, donde resido. </p>
             <p class="text-xl text-info"> Terminé el bachillerato en 2015, y durante mis años de estudiante me quedé
                 enamorado por
                 un tema
@@ -127,12 +126,14 @@
             Otras cosas, más o menos programáticas...</h4>
             <!-- lego -->
             <article class="h-[400px] grid grid-cols-3 relative">
-                <div class="absolute top-0 right-0 w-full h-full flex justify-center items-center">
-                    <div class="text-center">
+                <div class="absolute top-0 right-0 w-full h-full flex justify-center items-center overflow-hidden rounded-md">
+                    <img class="brightness-[50%] absolute bottom-0 right-0 w-full h-full object-cover" src="{{ asset('img/lego_familiy.jpeg') }}" alt="">
+                    <div class="z-[5] flex flex-col items-center text-white">
                         <h3 class="text-2xl font-semibold">
                             Me gusta montar
                         </h3>
                         <h1 class="text-3xl font-bold">¡LEGOS!</h1>
+                        <h4 class="playwrite-font">(con mi princesita ❤️)</h4>
                     </div>
                 </div>
                 <div class="col-span-3 z-50 lego-block bg-green-500 three-points">
@@ -170,7 +171,7 @@
                 </div>
             </article>
             <!-- lectura -->
-            <article id="lectura" class="m-10 bg-white shadow-md rounded-r-xl border-l-8 border-red-500 relative cosas-mias-item opacity-0">
+            <article id="lectura" class="md:m-5 bg-white shadow-md rounded-r-xl border-l-8 border-red-500 relative cosas-mias-item opacity-0">
                 <div class="bookmark drop-shadow-xl "></div>
                 <div class="p-5 flex justify-center items-center flex-col">
                     <h3 class="text-2xl font-semibold playwrite-font text-black">Leer </h3>
@@ -181,7 +182,7 @@
 ">
                         Me gusta mucho leer (siempre que el tiempo me lo permite). Los libros que suelo leer son
                         <i>distopías</i>, <i>apologética</i>, <i class="text-red-500">programación</i>, <i>novela
-                            histórica</i>, <i> aventuras...</i>
+                            histórica</i>, <i>biografías</i>, <i> aventuras...</i>
                         <br>
                         En fin, todo lo que me aporte algo y que me entretenga, tengo varias reseñas de libros en <a
                             class="text-blue-500 font-bold" target="_blank"
@@ -200,7 +201,7 @@
     </section>
     <!-- despedida -->
     <section class="dark:text-gray-400 p-10">
-        <div class="p-5 bg-gray-50 rounded-md shadow-md space-y-10 dark:bg-gray-900 dark:text-gray-400 ">
+        <div class="p-5 bg-gray-50 rounded-md shadow-md space-y-10 dark:bg-gray-900 dark:text-gray-400">
             <div class="bg-white dark:bg-gray-900">
                 <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                     <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">¡Hablemos!</h2>
