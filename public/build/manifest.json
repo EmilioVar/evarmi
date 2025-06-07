@@ -8,12 +8,12 @@
     "src": "public/fonts/Playwrite/PlaywriteGBS-VariableFont_wght.ttf"
   },
   "resources/css/app.css": {
-    "file": "assets/app-BFuWgK0o.css",
+    "file": "assets/app-W3WhTmiW.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-BaI2KW1x.js",
+    "file": "assets/app-CKDfstEI.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true

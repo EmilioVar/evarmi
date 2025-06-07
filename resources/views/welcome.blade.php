@@ -13,7 +13,7 @@
                     y, como puede apreciarse, Full Stack developer
                 </p>
                 <p
-                    class="text-3xl jersey-font bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent md:block lg:text-5xl font-bold text-hello opacity-0">
+                    class="text-3xl jersey-font bg-linear-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent md:block lg:text-5xl font-bold text-hello opacity-0">
                     ¡BIENVENID@!
                 </p>
             </div>
@@ -28,7 +28,7 @@
     <section id="info" class="p-10 space-y-5 ">
         <div class="p-5 bg-gray-50 rounded-md shadow-md space-y-10 dark:bg-gray-900 dark:text-gray-400 ">
             <h4
-                class="mb-3 text-3xl text-info font-bold bg-gradient-to-bl from-slate-900 via-slate-400 to-zinc-700 bg-clip-text text-transparent dark:text-gray-300">
+                class="mb-3 text-3xl text-info font-bold bg-linear-to-bl from-slate-900 via-slate-400 to-zinc-700 bg-clip-text text-transparent dark:text-gray-300">
                 Información básica</h4>
             <p class="text-xl text-info"> Ví el mundo por primera vez un <strong>19 de Julio de 1995</strong>, por lo
                 que <span style="color: rgb(0, 170, 255);">según los mágicos cálculos del paquete Carbon para php tengo
@@ -63,7 +63,7 @@
     <section id="technologies" class="p-10 space-y-5">
         <div class="p-5 bg-gray-50 rounded-md shadow-md space-y-10 dark:bg-gray-900 dark:text-gray-400 ">
             <h4
-                class="text-3xl text-technologies opacity-0 font-bold bg-gradient-to-bl from-slate-900 via-slate-400 to-zinc-700 bg-clip-text text-transparent dark:text-gray-300">
+                class="text-3xl text-technologies opacity-0 font-bold bg-linear-to-bl from-slate-900 via-slate-400 to-zinc-700 bg-clip-text text-transparent dark:text-gray-300">
                 Habilidades y tecnologías</h4>
             <div id="technologies-container"
                 class="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 content-center text-gray-600 font-bold text-sm">
@@ -123,15 +123,15 @@
         <div
             class="p-5 grid grid-cols-1 md:grid-cols-3 bg-gray-50 rounded-md shadow-md space-y-10 dark:bg-gray-900 dark:text-gray-400">
             <h4
-                class="text-3xl col-span-full cosas-mias-item opacity-0 font-bold bg-gradient-to-bl from-slate-900 via-slate-400 to-zinc-700 bg-clip-text text-transparent dark:text-gray-300">
+                class="text-3xl col-span-full cosas-mias-item opacity-0 font-bold bg-linear-to-bl from-slate-900 via-slate-400 to-zinc-700 bg-clip-text text-transparent dark:text-gray-300">
                 Otras cosas, más o menos programáticas...</h4>
             <!-- lego -->
             <article class="h-[400px] grid grid-cols-3 relative">
                 <div
                     class="absolute top-0 right-0 w-full h-full flex justify-center items-center overflow-hidden rounded-md">
-                    <img class="brightness-[50%] absolute bottom-0 right-0 w-full h-full object-cover"
+                    <img class="brightness-50 absolute bottom-0 right-0 w-full h-full object-cover"
                         src="{{ asset('img/lego_familiy.jpeg') }}" alt="">
-                    <div class="z-[5] flex flex-col items-center text-white">
+                    <div class="z-5 flex flex-col items-center text-white">
                         <h3 class="text-2xl font-semibold">
                             Me gusta montar
                         </h3>
@@ -158,16 +158,16 @@
                 <div class="col-span-1 z-10 lego-block bg-red-500 one-point">
                     <span></span>
                 </div>
-                <div class="col-span-2 z-[9] lego-block bg-blue-500 two-points">
+                <div class="col-span-2 z-9 lego-block bg-blue-500 two-points">
                     <span></span><span></span>
                 </div>
-                <div class="col-span-2 z-[8] lego-block bg-blue-500 two-points">
+                <div class="col-span-2 z-8 lego-block bg-blue-500 two-points">
                     <span></span><span></span>
                 </div>
-                <div class="cols-span-1 z-[7] lego-block bg-red-500 one-point">
+                <div class="cols-span-1 z-7 lego-block bg-red-500 one-point">
                     <span></span>
                 </div>
-                <div class="col-span-3 z-[6] lego-block bg-green-500 three-points">
+                <div class="col-span-3 z-6 lego-block bg-green-500 three-points">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -199,7 +199,7 @@
                 class="relative flex justify-center rounded-md cosas-mias-item opacity-0 min-h-96">
                 <p class="text-white z-10 relative text-2xl mt-5 p-5">Y, por supuesto... ¡PICAR CÓDIGO!</p>
                 <img src="{{ asset('img/programming.gif') }}"
-                    class="absolute top-0 right-0 object-cover h-full w-full brightness-[50%] rounded-md"
+                    class="absolute top-0 right-0 object-cover h-full w-full brightness-50 rounded-md"
                     alt="programming-gif">
             </article>
         </div>
@@ -208,7 +208,7 @@
     <section class="dark:text-gray-400 p-10">
         <div class="p-5 bg-gray-50 rounded-md shadow-md space-y-10 dark:bg-gray-900 dark:text-gray-400">
             <div class="bg-white dark:bg-gray-900">
-                <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+                <div class="py-8 lg:py-16 px-4 mx-auto max-w-(--breakpoint-md)">
                     <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
                         ¡Hablemos!</h2>
                     <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Estoy
