@@ -1,4 +1,6 @@
 <x-layout>
+    <p class="text-white">{{ session('user_token') }}</p>
+    <a class="text-white" href="{{ route('more-conffeti', ['userToken' => session('user_token')]) }}" target="_blank">más conffeti</a>
     <!-- header -->
     <header class="h-screen w-screen grid grid-cols-2 dark:text-gray-300 ">
         <section class="md:flex col-span-2 md:col-span-1 justify-center items-center p-10">
@@ -232,6 +234,24 @@
     </footer>
     <!-- projects -->
     <x-slot:script>
+        <script type="module">
+            const userToken = "{{ session('user_token') }}";
+
+            Echo.channel(`fire-conffeti.${userToken}`)
+                .listen('FireConffeti', () => {
+                    console.log('cargado');
+                function randomInRange(min, max) {
+                    return Math.random() * (max - min) + min;
+                }
+
+                confetti({
+                    angle: randomInRange(55, 125),
+                    spread: randomInRange(50, 70),
+                    particleCount: randomInRange(50, 100),
+                    origin: { y: 0.6 },
+                });
+             });
+        </script>
         <script type="module">
             function animateParagraphs() {
                 gsap.fromTo('.text-hello', {
