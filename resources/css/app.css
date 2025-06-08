@@ -11,6 +11,11 @@
     src: url('/public/fonts/Jersey/Jersey10-Regular.ttf') format('truetype');
 }
 
+canvas {
+  pointer-events: none;
+  z-index: 0;
+}
+
 .playwrite-font {
     font-family: 'Playwrite GB S';
     font-optical-sizing: auto;
