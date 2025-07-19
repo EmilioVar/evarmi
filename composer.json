@@ -9,7 +9,7 @@
         "laravel/breeze": "2.3.6",
         "laravel/framework": "12.17.0",
         "laravel/tinker": "2.10.1",
-        "livewire/livewire": "3.6.3",
+        "livewire/livewire": "3.6.4",
         "livewire/volt": "1.7.1",
         "pusher/pusher-php-server": "^7.2"
     },
